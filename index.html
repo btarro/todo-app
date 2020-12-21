@@ -8,14 +8,13 @@
 
 <div class='main'>
 
-    <body id='todoContainer'>
+    <body>
         <h1>To-do list</h1>
-        <form id='todos'>
-            <input type="text" id="newTodo" placeholder="Enter your todo.." />
-            <input type="button" value="Submit" onclick="myFunction()" />
+        <form>
+            <input type="text" id="newTodo" placeholder="What needs to get done?" />
+            <input type="button" value="Submit" onclick="submitNewTodo()" />
         </form>
-        <ul id='todoList'>
-            <li>Sample task</li>
+        <ul id='todoList' type="circle">
         </ul>
     </body>
 

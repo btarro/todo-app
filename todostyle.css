@@ -12,3 +12,7 @@ body {
     background-color: #333333;
 }
 
+.strikeMeDown {
+    text-decoration: line-through;
+}
+

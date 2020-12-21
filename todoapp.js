@@ -1,12 +1,21 @@
 // todo app
-// ** WIP ** 12182020
+// ** WIP ** 12182021
 
 
-function myFunction() {
-    var newNode = document.createElement("LI");
-    var x = document.getElementById("newTodo").value;
+function submitNewTodo() {
+    let newNode = document.createElement("LI");
+    let x = document.getElementById("newTodo").value;
     var textNode = document.createTextNode(x);
     newNode.appendChild(textNode);
+    newNode.onclick = function () {
+        newNode.classList.toggle("strikeMeDown");
+        let btn = document.createElement("BUTTON")
+        btn.innerHTML = "X";
+        newNode.appendChild(btn);
+        btn.onclick = function () {
+            newNode.remove();
+        }
+    };
     document.getElementById("todoList").appendChild(newNode);
 }
 
