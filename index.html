@@ -8,12 +8,15 @@
 
 <div class='main'>
 
-    <body>
-        <h1>Todo list</h1>
-        <form id=newTodo>
-            <input type="submit" value="Add a todo..">
+    <body id='todoContainer'>
+        <h1>To-do list</h1>
+        <form id='todos'>
+            <input type="text" id="newTodo" placeholder="Enter your todo.." />
+            <input type="button" value="Submit" onclick="myFunction()" />
         </form>
-        <p id="testTodo"></p>
+        <ul id='todoList'>
+            <li>Sample task</li>
+        </ul>
     </body>
 
 </div>
