@@ -1,26 +1,23 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
     <link rel="stylesheet" href="todostyle.css">
-
 </head>
 
-<div class='main'>
-
-    <body>
-        <h1>To-do list</h1>
-        <div id=inputDiv>
+<body>
+    <div id='main'>
+        <div id='title'>To-do list</div>
+        <div id='appContainer'>
+            <div id='inputDiv'></div>
+            <ul id='todoList'>
+            </ul>
+            <div id='buttonDiv'></div>
         </div>
-        <ul id='todoList' type="circle">
-        </ul>
         <script src=todoapp.js></script>
-    </body>
-
-</div>
+    </div>
+    </div>
+</body>
 
 </html>
-
-<!-- OLD -->
-<!-- <input type="text" id="newTodoInput" placeholder="What needs to get done?" />
-        <input type="button" value="Submit" onclick="submitNewTodo()" />
