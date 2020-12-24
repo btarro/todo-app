@@ -1,12 +1,14 @@
-
-/* Add ubuntu font reference! */
-
 html, body {
     padding: 10px;
     background-color: #333333;
     color: whitesmoke;
     font-family: ubuntu;
     height: 80%;
+}
+ul {
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
 }
 #title {
     font-size: 36px;
@@ -26,17 +28,6 @@ html, body {
     align-items: left;
     flex-direction: column;
 }
-.strikeMeDown {
-    text-decoration: line-through;
-    color: grey;
-
-
-}
-ul {
-    list-style-type: none;
-    width: 100%;
-    padding: 0;
-}
 #newTodoInput {
     background-color: #333333;
     color: whitesmoke;
@@ -51,5 +42,8 @@ ul {
     border-radius: 8px;;
     outline: none;
     margin: 5px;
-
+}
+.strikeMeDown {
+    text-decoration: line-through;
+    color: grey;
 }
